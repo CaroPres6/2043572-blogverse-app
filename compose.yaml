@@ -19,7 +19,7 @@ services:
       retries: 5
 
   backend:
-    image: CaroPres6/2043572-blogverse-backend:${BACKEND_VERSION:-latest}
+    image: caropres6/2043572-blogverse-backend:${BACKEND_VERSION:-latest}
     build:
       context: ./2043572-blogverse-backend
       dockerfile: Dockerfile
@@ -42,7 +42,7 @@ services:
         condition: service_healthy
 
   frontend:
-    image: CaroPres6/2043572-blogverse-frontend:${FRONTEND_VERSION:-latest}
+    image: caropres6/2043572-blogverse-frontend:${FRONTEND_VERSION:-latest}
     build:
       context: ./2043572-blogverse-frontend
       dockerfile: Dockerfile
